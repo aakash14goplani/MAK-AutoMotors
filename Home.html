@@ -1,0 +1,258 @@
+.<!doctype html>
+<html>
+<head>
+<title>Home_Page</title>
+<style>
+body 
+{	
+	background-color: Lavender;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+#container 
+{
+	width: 900px;
+	height: auto;
+	margin: auto;
+	border : 2px solid Lavender;
+	border-radius : 25px;
+	box-shadow : 5px 5px 5px 5px #888888;
+	background-color: #FAFAD2;
+}
+#header 
+{
+	font-family: Times New Roman;
+	height: 260px;
+	margin-top: 0;
+	width: 900px;
+	height: auto;
+	color: Black;
+	text-align: center;
+	margin: auto;
+	background-color: Lavender;
+}
+/*#header img
+{
+	background-image : url('Images/mak_logo.gif');
+	background-repeat : no-repeat;
+	height:auto;
+	width:auto;
+	float:left;
+}*/
+/*navigations*/
+#nav 
+{
+	height: 24px;
+	width: auto;	
+	color: #FEE97C;
+	margin-left : 103px;
+	font-size:25px;
+}
+#nav a 
+{
+	display: inline;
+	height: 32px;
+	width: 120px;
+	padding: 3px 10px 3px 10px;
+	margin-right: 1px;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	background-color: #FAFAD2;
+	color: black;
+}
+#nav a:hover 
+{
+	display: inline;
+	font-weight: none;
+	color: Red;
+	background-color: #FAFAD2;
+}
+#login
+{
+	float:right;
+}
+#login a
+{
+	height: 32px;
+	width: 120px;
+	padding: 3px 10px 3px 10px;
+	margin-right: 90px;
+	float: right;
+	text-decoration: none;
+	color: black;
+	font-size:24px;
+}
+#login a:hover 
+{
+	display: inline;
+	font-weight: none;
+	color: Red;
+	background-color: #FAFAD2;
+}
+
+/*Container for images*/
+#imgg
+{
+	width: 800px;
+	height: auto;
+	color: blue;
+	text-align: center;
+	margin: auto;
+	border : 2px solid #FAFAD2;
+	border-radius : 25px;
+	background-color: #FFFAF0;
+}
+/*Styling for images*/
+img
+{
+	padding : 20px;
+	width: 180px;
+	height: 180px;
+	border: 1px solid black;
+	transition:width 2s, height 2s;
+	-webkit-transition:width 2s, height 2s, -webkit-transform 2s;	
+}
+img:hover
+{
+	width:250px;
+	height:250px;
+	transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+}
+.text
+{
+	margin-top : 2px;
+	text-align: left;
+	font-family: Times New Roman;
+	font-size: 40px;
+	color:black;
+}
+.text i
+{
+width:900px;
+height:160px;
+background:Lavender;
+position:relative;
+animation:myfirst 150s;
+-webkit-animation:myfirst 120s; /* Safari and Chrome */
+}
+
+@keyframes myfirst
+{
+0%   {background:#FAFAD2; left:0px; top:0px;}
+20%  {background:Red; left:200px; top:0px;}
+40%  {background:Orange; left:450px; top:0px;}
+60% {background:Pink; right:200px; top:0px;}
+80%  {background:White; right:450px; top:0px;}
+100% {background:#FFFD2; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {background:#FAFAD2; left:0px; top:0px;}
+20%  {background:Red; left:200px; top:0px;}
+40%  {background:Orange; left:450px; top:0px;}
+60% {background:Pink; right:200px; top:0px;}
+80%  {background:White; right:450px; top:0px;}
+100% {background:#FFFD2; left:0px; top:0px;}
+}
+
+/*footer*/
+#footer 
+{
+	clear : both;
+	font-family: Times New Roman;
+	height: 160px;
+	margin-top: 0;
+	width: 900px;
+	height: auto;
+	color: Black;
+	text-align: center;
+	margin: auto;
+	background-color: Lavender;
+}
+#footer a
+{
+	display : inline;
+	float : left;
+	height: 12px;
+	width: 140px;
+	margin-left: 0px;
+	text-decoration: none;
+	color: black;
+	font-size:14px;
+}
+#footer a:hover
+{
+	display: inline;
+	font-weight: none;
+	color: Red;
+	background-color: Lavender;
+}
+#footer img
+{
+	float : right;
+	height : 25px; width : 25px;
+	border : 0;
+	padding:0;
+}
+#text
+{
+	float : right;
+}
+</style>
+</head>
+
+<body>
+	<!--Header-->
+	<div id="header">
+		<h1> MAK AutoMotors</h1>
+		<p>All types of Automobiles are found here...</p>
+	</div>
+	
+	<!--Main Body-->
+	<div id="container">
+		<br><br>
+		<div id="nav"> 
+			<a href="Home.html">Home</a>
+			<a href="Vehicles.html">Vehicles</a> 
+			<a href="Services.html">Services</a>
+			<a href="Carrers.html">Carrers</a> 
+			<a href="Queries.html">Queries</a>
+		</div>
+		<br><br>
+		<div id="login"><a href="Login.html">Login</a></div>
+		<br><br><br>
+		<div id="imgg">	<!--Container for images-->
+			<br><br><br>
+				<div class="text"><center>Our Brands</center></div><br><br>
+				<img src="Images/hero 1.jpg">
+				<img src="Images/audi.jpg">
+				<img src="Images/bmw1.jpg"><br>
+				<img src="Images/m2.jpg">
+				<img src="Images/h1.jpg">
+				<img src="Images/ma1.jpg"><br>
+				<img src="Images/hundai.jpg">
+				<img src="Images/tata.jpg">
+				<img src="Images/b1.jpg"><br>
+		</div>
+		<br><br><br>
+		<!--Text-->
+		<div class="text"><i>"Catch us if you Can!"</i></div>
+		<br><br>
+	</div>
+	<br><br><br>
+	<!--Footer-->
+	<div id="footer"> 
+		<a href="About_us.html">About Us</a>
+		<a href="Contact_us.html">Contact Us</a> 
+		<a href="T&C.html">Terms and Conditions</a>
+		<div id="text">INDIA/English<img src="Images/Flag.PNG" ></div>
+	</div>
+	<br><br><br>
+</body>
+</html>

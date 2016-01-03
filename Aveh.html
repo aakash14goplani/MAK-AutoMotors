@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<title>Vehicles</title>
+<style>
+body 
+{	
+	background-color: Lavender;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+#container 
+{
+	width: 900px;
+	height: auto;
+	text-align: center;
+	margin: auto;
+	border : 2px solid Lavender;
+	border-radius : 25px;
+	box-shadow : 5px 5px 5px 5px #888888;
+	background-color: #FAFAD2;
+	color : black;
+}
+#header 
+{
+	font-family: Times New Roman;
+	height: 160px;
+	margin-top: 0;
+	width: 900px;
+	height: auto;
+	color: Black;
+	text-align: center;
+	margin: auto;
+	background-color: Lavender;
+}
+#blocks
+{
+	width: 800px;
+	height: auto;
+	margin: auto;
+	border : 2px solid #FAFAD2;
+	border-radius : 25px;
+	background-color: #FFFAF0;
+	padding : 3px;
+	color:black;
+}
+iframe
+{
+	margin: auto;
+	width : 750px;
+	background-color: #FFFAF0;
+}
+table
+{
+	margin-left : 25px;
+}
+</style>
+</head>
+
+<body>
+<div id="header"> 
+		<h1> MAK AutoMotors</h1>
+		<p><center>All types of Automobiles are found here...</center></p>
+	</div>
+	
+	<!--Main Body-->
+	<div id="container">
+		<br><br>
+		<br><br>
+		<div id="blocks">
+			<center><h1>Vehicles</h1></center>
+			<p>
+			<table>
+			<tr>
+			<td>
+			<form method="POST" action="asvehicle.php">
+					Search by name : <br>
+				<input type="textbox" name="search" value="Mention Name">
+				<br><input type="submit" name="submit" value="search">
+			</form>
+			</td>
+			
+			<td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+			</td>
+			
+			<td>
+			<form method="POST" action="1.php">
+				Sort Price Range : <br>
+				<input type="textbox" name="min" value="minPrice">
+				<b> between </b>
+				<input type="textbox" name="max" value="maxPrice">
+				<br><input type="submit" name="submit" value="search">
+			</form>
+			</td>
+			</tr>
+			</table>
+			</p>
+			<a style="text-decoration:none; float:right; margin-right:40px;" href="Vehicles.html">BACK</a>
+			<br><br>
+			<iframe src="carDemo.html" name="vehicles" height="950px"></iframe>
+		</div><br><br>
+	</div>
+</body>
+</html>
